@@ -21,9 +21,11 @@ html, body {
     height: 100%;
     background-image: url(images/rainforest.jpg);
 }
-.form-div {
+.right-div {
     width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .logo-background {
     display: flex;
@@ -31,7 +33,7 @@ html, body {
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 155px;
     align-items: center;
     position: relative;
 }
@@ -41,7 +43,78 @@ html, body {
 }
 .logo-text {
     color: white;
-    font-size: 60px;
+    font-size: 120px;
     font-family: 'Norse-Bold';
     font-weight: 1000;
 }
+.text-div-container, .account-div, fieldset {
+    flex: 1;
+}
+.text-div-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F0F0F0;
+}
+.text-content {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 50px;
+}
+.account-div {
+    background-color: #F0F0F0;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 30px;
+    margin-left: 30px;
+}
+label {
+    display: flex;
+}
+form > * {
+    width: 40%;
+}
+#first-name, #last-name, #email, #phone-number, #password, #confirm-password {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+}
+fieldset {
+    position: relative;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+h1 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.button {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #596D48;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 100px;
+}
+.button-text {
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+#password:invalid, #confirm-password:invalid {
+    border-color: red;
+}
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-size: 30px;
+}
+    
